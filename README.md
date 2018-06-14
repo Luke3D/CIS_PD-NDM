@@ -45,9 +45,7 @@ The runtimes were generated using a computer with 32 GB RAM, 4 cores @ 2.8 GHz (
 
 ### OS Requirements
 
-The package development was tested on *Linux* and *Windows* operating systems, and has been tested on the following versions:
-
-Linux:
+The package development was tested on *Mac OSX* and *Windows* operating systems, and has been tested on the following versions:
 
 Mac OSX: Sierra 10.12.6
 
@@ -123,7 +121,9 @@ If you encounter any issues with installing any of these required packages, or s
 The dataset used to support the findings of this publication are available from the Michael J. Fox Foundation but restrictions apply to the availability of these data, which were used under license for this study. The Michael J. Fox Foundation plans to release the dataset used in this publication alongside a significant, additional portion of related PD data from a separate smartwatch as part of a community analysis in the larger CIS-PD study timeline. Data are however available from the authors upon reasonable request and with permission from the Michael J. Fox Foundation.
 
 # Results
-To do
+Our results show that a single wearable sensor on the back of the hand is sufficient for symptom detection, and that using personal data improves accuracy over population models. Training on repeated assessments on one day does not improve detection on subsequent days. Our results suggest that PD patients could significantly benefit from continuous detection of motor symptoms in small, personalized datasets collected longitudinally.
+
+To do: add more results
 
 # Citation
 To do
