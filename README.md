@@ -1,4 +1,4 @@
-# Wearable sensors for personalized monitoring of Parkinson’s disease: is more data always better? (CIS-PD npg)
+# Wearable sensors for personalized monitoring of Parkinson’s disease: is more data always better?
 Michael J. Fox Foundation for Parkinson’s Research Clinician Input Study (CIS-PD) Wireless Adhesive Sensor Sub-Study
 
 ## Contents
@@ -82,6 +82,7 @@ sudo pip install --upgrade nolds-0.4.1-py2.py3-none-any.whl
 ```
 
 ### CNN Calculation
+#### TensorFlow
 In order to run [CNNModels.ipynb](./code/CNNModels.ipynb), an installation of `keras` and a backend of either `tensorflow` or `theano` is required.
 
 `tensorflow` can be installed using the following command on a dedicated GPU machine through pip
@@ -94,13 +95,14 @@ pip3 install --upgrade tensorflow
 ```
 Additional installation instructions for `tensorflow` can be found [here](https://www.tensorflow.org/install/).
 
-
+#### Theano
 `theano` can be installed using conda with the following command:
 ```
 conda install theano pygpu
 ```
 Additional installation instructions for `theano` can be found [here](http://deeplearning.net/software/theano/install.html).
 
+#### Keras
 Finally, once a `tensorflow` or `theano` backend has been chosen and installed, the last package required to run all of the code is the installation of `keras`. This can be done through `pip` using the following command:
 ```
 pip install keras
