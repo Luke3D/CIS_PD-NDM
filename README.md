@@ -39,7 +39,7 @@ NVIDIA GeForce GTX TITAN X
 
 NVIDIA GeForce GTX 1050
 
-The runtimes were generated using a computer with 32 GB RAM, 4 cores @ 2.8 GHz (i7-7700HQ), an NVIDIA GeForce 1050 GPU, and an internet speed of 20 Mbps.
+The runtimes were generated using a computer with 32 GB RAM, 4 cores @ 2.8 GHz (i7-7700HQ), an NVIDIA GeForce GTX 1050 GPU, and an internet speed of 20 Mbps.
 
 ## Software Requirements
 
@@ -58,7 +58,7 @@ All of the packages used to run these `Jupyter Notebook` files were installed us
 Two main packages used in the code were tested and developed using the versions listed below:
 
 - `pandas`: 0.20.3+
-- `keras`: 2.0.2+
+- `keras`: 2.0.2
 - `tensorflow`: 1.8.0
 - `theanos`: 0.9.0
 
