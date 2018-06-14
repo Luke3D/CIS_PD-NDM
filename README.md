@@ -35,11 +35,11 @@ CPU: 4+ Cores, 2.8+ GHz/core
 
 Additionally, [CNNModels.ipynb](./code/CNNModels.ipynb) uses the `keras` package in training the convolutional neural networks. Although `keras` can be run with a CPU, for optimal performance we recommend running [CNNModels.ipynb](./code/CNNModels.ipynb) on a computer with a dedicated GPU. The code has been tested on the following GPUs:
 
-NVIDIA GeForce TITAN X
+NVIDIA GeForce GTX TITAN X
 
-NVIDIA GeForce 1050
+NVIDIA GeForce GTX 1050
 
-The runtimes were generated using a computer with 32 GB RAM, 4 cores @ 2.8 GHz (i7-7700HQ), and an NVIDIA GeForce 1050 GPU.
+The runtimes were generated using a computer with 32 GB RAM, 4 cores @ 2.8 GHz (i7-7700HQ), an NVIDIA GeForce 1050 GPU, and an internet speed of 20 Mbps.
 
 ## Software Requirements
 
@@ -59,10 +59,61 @@ Two main packages used in the code were tested and developed using the versions 
 
 - `pandas`: 0.20.3+
 - `keras`: 2.0.2+
+- `tensorflow`: 1.8.0
+- `theanos`: 0.9.0
 
 
 # Installation Guide
-To do
+Users should first install the latest version of `Anaconda` using the following [link](https://www.anaconda.com/download/) and downloading the installer or appropriate version for `Python 3.6 version'. This will automatically install a majority of the default `Python` packages needed, along with `Jupyter Notebook`.
+
+## Package Installation
+There are a number of additional packages and software required to fully run all of the code in the `CIS-PD_npg` repository.
+
+### Features Calculation
+For features calculation on the raw data, the `nolds` package is required and can be installed using the following command through pip:
+```
+pip install nolds
+```
+and will complete in no longer than 1 minute on a recommended machine.
+
+Additionally, the `nolds` .whl file has been provided and is located [here](./docs/nolds-0.4.1-py2.py3-none-any.whl) and can be installed using the following command:
+```
+sudo pip install --upgrade nolds-0.4.1-py2.py3-none-any.whl
+```
+
+### CNN Calculation
+In order to run [CNNModels.ipynb](./code/CNNModels.ipynb), an installation of `keras` and a backend of either `tensorflow` or `theano` is required.
+
+`tensorflow` can be installed using the following command on a dedicated GPU machine through pip
+```
+pip3 install --upgrade tensorflow-gpu
+```
+or for a CPU-only machine:
+```
+pip3 install --upgrade tensorflow
+```
+Additional installation instructions for `tensorflow` can be found [here](https://www.tensorflow.org/install/).
+
+
+`theano` can be installed using conda with the following command:
+```
+conda install theano pygpu
+```
+Additional installation instructions for `theano` can be found [here](http://deeplearning.net/software/theano/install.html).
+
+Finally, once a `tensorflow` or `theano` backend has been chosen and installed, the last package required to run all of the code is the installation of `keras`. This can be done through `pip` using the following command:
+```
+pip install keras
+```
+Alternatively, one can also use `conda` to install `keras`.
+
+Additional installation instructions for `keras` can be found [here](https://keras.io/#installation).
+
+#### GPU Drivers
+Of note for the NVIDIA graphics cards that the code was tested on is the requirement of installing the appropriate CUDA drivers, if the graphics card is CUDA-capable. More information can be found on the [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#installing-cuda-development-tools).
+
+
+If you encounter any issues with installing any of these required packages, or still encounter issues running the code after successfully installing them, please raise an [Issue](https://github.com/Luke3D/CIS-PD_npg/issues).
 
 # Demo
 The dataset used to support the findings of this publication are available from the Michael J. Fox Foundation but restrictions apply to the availability of these data, which were used under license for this study. The Michael J. Fox Foundation plans to release the dataset used in this publication alongside a significant, additional portion of related PD data from a separate smartwatch as part of a community analysis in the larger CIS-PD study timeline. Data are however available from the authors upon reasonable request and with permission from the Michael J. Fox Foundation.
