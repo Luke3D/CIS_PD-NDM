@@ -1,0 +1,4 @@
+"Timestamp (ms)","AnnotationId","EventType","AuthorId","Start Timestamp (ms)","Stop Timestamp (ms)","Value"
+"1499368653485","Activity:Heart Rate Variability","Heart Rate Variability","","1499368352310","1499368652316",""
+"1499369192022","Activity:MDS-UPDRS #7: Gait","MDS-UPDRS #7: Gait","","1499369173367","1499369190605",""
+"1499369544448","Activity:Motor #2: Walking","Motor #2: Walking","","1499369510242","1499369543158",""
