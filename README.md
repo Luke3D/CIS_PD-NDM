@@ -9,7 +9,6 @@ Michael J. Fox Foundation for Parkinson’s Research Clinician Input Study (CIS-
 - [Installation Guide](#installation-guide)
 - [Demo](#demo)
 - [Results](#results)
-- [License](./LICENSE)
 - [Issues](https://github.com/Luke3D/CIS-PD_npg/issues)
 - [Citation](#citation)
 
@@ -80,9 +79,9 @@ sudo pip install --upgrade nolds-0.4.1-py2.py3-none-any.whl
 ```
 
 ### CNN Calculation
-#### TensorFlow
 In order to run [CNNModels.ipynb](./code/CNNModels.ipynb), an installation of `keras` and a backend of either `tensorflow` or `theano` is required.
 
+#### TensorFlow
 `tensorflow` can be installed using the following command on a dedicated GPU machine through pip
 ```
 pip3 install --upgrade tensorflow-gpu
