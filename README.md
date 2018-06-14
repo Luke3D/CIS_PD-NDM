@@ -64,7 +64,7 @@ Four main packages used in the code were tested and developed using the versions
 
 
 # Installation Guide
-Users should first install the latest version of `Anaconda` using the following [link](https://www.anaconda.com/download/) and downloading the installer or appropriate version for `Python 3.6 version'. This will automatically install a majority of the default `Python` packages needed, along with `Jupyter Notebook`.
+Users should first install the latest version of `Anaconda` using the following [link](https://www.anaconda.com/download/) and downloading the installer or appropriate version for `Python 3.6 version`. This will automatically install a majority of the default `Python` packages needed, along with `Jupyter Notebook`.
 
 ## Package Installation
 There are a number of additional packages and software required to fully run all of the code in the `CIS-PD_npg` repository.
