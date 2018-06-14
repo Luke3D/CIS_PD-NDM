@@ -21,7 +21,7 @@ Individuals living with Parkinson’s disease (PD) often experience variable and
 
 - [code](./code): `Python 3.5` package code as `Jupyter Notebook` files.
 - [docs](./docs): Accompanying documentation on code and usage structure.
-- [tests](./tests): Simulated test data for running the `Jupyter Notebook` files.
+- [tests](./tests): Simulated test data for running the `Jupyter Notebook` files. Please see the [Demo](#demo) section for information about availability of the dataset used in this study.
 
 # System Requirements
 
@@ -55,7 +55,7 @@ Windows: 7 and 10
 
 All of the packages used to run these `Jupyter Notebook` files were installed using either `pip` or `Anaconda` and should be compatible across all platforms. We ran the code on `Anaconda` using `Python 3.6.2` or higher.
 
-Two main packages used in the code were tested and developed using the versions listed below:
+Four main packages used in the code were tested and developed using the versions listed below:
 
 - `pandas`: 0.20.3+
 - `keras`: 2.0.2
@@ -110,9 +110,11 @@ Alternatively, one can also use `conda` to install `keras`.
 Additional installation instructions for `keras` can be found [here](https://keras.io/#installation).
 
 #### GPU Drivers
-Of note for the NVIDIA graphics cards that the code was tested on is the requirement of installing the appropriate CUDA drivers, if the graphics card is CUDA-capable. More information can be found on the [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#installing-cuda-development-tools).
+Of note for the NVIDIA graphics cards that the code was tested on is the requirement of installing the appropriate CUDA drivers, if the graphics card is CUDA-capable. For the NVIDIA GeForce GTX 1050 used for a majority of the code, `CUDA 9.2` was installed and tested when running the CNN operation code.
 
+More information can be found on the [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#installing-cuda-development-tools).
 
+## Installation Issues
 If you encounter any issues with installing any of these required packages, or still encounter issues running the code after successfully installing them, please raise an [Issue](https://github.com/Luke3D/CIS-PD_npg/issues).
 
 # Demo
