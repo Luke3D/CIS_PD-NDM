@@ -118,7 +118,13 @@ More information can be found on the [CUDA Toolkit Documentation](https://docs.n
 If you encounter any issues with installing any of these required packages, or still encounter issues running the code after successfully installing them, please raise an [Issue](https://github.com/Luke3D/CIS-PD_npg/issues).
 
 # Demo
+Last updated: 6/14/2018
+
 The dataset used to support the findings of this publication are available from the Michael J. Fox Foundation but restrictions apply to the availability of these data, which were used under license for this study. The Michael J. Fox Foundation plans to release the dataset used in this publication alongside a significant, additional portion of related PD data from a separate smartwatch as part of a community analysis in the larger CIS-PD study timeline. Data are however available from the authors upon reasonable request and with permission from the Michael J. Fox Foundation.
+
+Currently, a limited "toy" dataset containing simulated data using identical sensors and sensor placement is available [here](./tests/1001). The dataset is limited in that it does not contain all of the tasks performed in the actual study and does not encompass multiple trials across multiple days of data. Structurally, however, it is identical to the study dataset.
+
+If you encounter any issues with playing around with the "toy" dataset, please raise an [Issue](https://github.com/Luke3D/CIS-PD_npg/issues). It is probable that many of these issues will resolve themselves once the complete dataset used in the study is available, with permission from the Michael J. Fox Foundation as they follow their scheduled CIS-PD data release timeline.
 
 # Results
 Our results show that a single wearable sensor on the back of the hand is sufficient for symptom detection, and that using personal data improves accuracy over population models. Training on repeated assessments on one day does not improve detection on subsequent days. Our results suggest that PD patients could significantly benefit from continuous detection of motor symptoms in small, personalized datasets collected longitudinally.
