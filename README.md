@@ -24,7 +24,7 @@ Machine learning algorithms that use data streams captured from soft wearable se
 
 ## Hardware Requirements
 
-The code in the `CIS-PD_npg` repo can be run on a standard computer with enough RAM to support processing of the complete dataset as defined by the user. For absolute minimum performance, a computer with 4 GB of RAM. For optimal performance, the following specifications are recommended:
+The code in the `CIS_PD-NDM` repo can be run on a standard computer with enough RAM to support processing of the complete dataset as defined by the user. For absolute minimum performance, a computer with 4 GB of RAM. For optimal performance, the following specifications are recommended:
 
 RAM: 16+ GB
 
@@ -62,7 +62,7 @@ Four main packages used in the code were tested and developed using the versions
 Users should first install the latest version of `Anaconda` using the following [link](https://www.anaconda.com/download/) and downloading the installer or appropriate version for `Python 3.6 version`. This will automatically install a majority of the default `Python` packages needed, along with `Jupyter Notebook`.
 
 ## Package Installation
-There are a number of additional packages and software required to fully run all of the code in the `CIS-PD_npg` repository.
+There are a number of additional packages and software required to fully run all of the code in the `CIS_PD-NDM` repository.
 
 ### Features Calculation
 For features calculation on the raw data, the `nolds` package is required and can be installed using the following command through pip:
@@ -112,7 +112,7 @@ Of note for the NVIDIA graphics cards that the code was tested on is the require
 More information can be found on the [CUDA Toolkit Documentation](https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html#installing-cuda-development-tools).
 
 ## Installation Issues
-If you encounter any issues with installing any of these required packages, or still encounter issues running the code after successfully installing them, please raise an [Issue](https://github.com/Luke3D/CIS-PD_npg/issues).
+If you encounter any issues with installing any of these required packages, or still encounter issues running the code after successfully installing them, please raise an [Issue](https://github.com/Luke3D/CIS_PD-NDM/issues).
 
 # Demo
 Last updated: 6/14/2018
@@ -121,5 +121,5 @@ The dataset used to support the findings of this publication are available from 
 
 Currently, a limited "toy" dataset containing simulated data using identical sensors and sensor placement is available [here](./tests/1001). The dataset is limited in that it does not contain all of the tasks performed in the actual study and does not encompass multiple trials across multiple days of data. Structurally, however, it is identical to the study dataset. The code in this reposititory has been commented / modified to run while using the limited "toy" dataset. These changes will be reverted once the main dataset is available.
 
-If you encounter any issues with playing around with the "toy" dataset, please raise an [Issue](https://github.com/Luke3D/CIS-PD_npg/issues). It is probable that many of these issues will resolve themselves once the complete dataset used in the study is available, with permission from the Michael J. Fox Foundation as they follow their scheduled CIS-PD data release timeline.
+If you encounter any issues with playing around with the "toy" dataset, please raise an [Issue](https://github.com/Luke3D/CIS_PD-NDM/issues). It is probable that many of these issues will resolve themselves once the complete dataset used in the study is available, with permission from the Michael J. Fox Foundation as they follow their scheduled CIS-PD data release timeline.
 
