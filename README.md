@@ -16,8 +16,8 @@ Machine learning algorithms that use data streams captured from soft wearable se
 
 # Repo Contents
 
-- [code](./code): `Python 3.5` package code as `Jupyter Notebook` files.
-- [docs](./docs): Accompanying documentation on code and usage structure.
+- [code](./code): `Python 3.5` package code as `Jupyter Notebook` files. 'NewPaperAnalysis' contains the results shown in the paper, ordered by section. 'CNNModels' contains the code to build and train the Convolutional Neural network.  
+- [helperFcns](./helperFcns): Accompanying helper functions to extract sensors data clips and compute features from the raw sensors data.
 - [tests](./tests): Simulated test data for running the `Jupyter Notebook` files. Please see the [Demo](#demo) section for information about availability of the dataset used in this study.
 
 # System Requirements
