@@ -1,4 +1,4 @@
-# Wearable sensors for personalized monitoring of Parkinson’s disease: is more data always better?
+# Wearable sensors for Parkinson’s disease: which data are worth collecting for training symptom detection models
 Michael J. Fox Foundation for Parkinson’s Research Clinician Input Study (CIS-PD) Wireless Adhesive Sensor Sub-Study
 
 ## Contents
@@ -8,13 +8,11 @@ Michael J. Fox Foundation for Parkinson’s Research Clinician Input Study (CIS-
 - [System Requirements](#system-requirements)
 - [Installation Guide](#installation-guide)
 - [Demo](#demo)
-- [Results](#results)
 - [Issues](https://github.com/Luke3D/CIS-PD_npg/issues)
-- [Citation](#citation)
 
 # Overview
 
-Individuals living with Parkinson’s disease (PD) often experience variable and unpredictable motor symptoms such as tremor, rigidity, and postural instability, which can affect activities in daily life. Machine learning algorithms that use data streams captured from soft wearable sensors have the potential to automatically detect PD symptoms and inform clinicians about the progression of disease with minimal burden and discomfort to the patient. However, these algorithms must be trained with annotated data from clinical experts who can recognize symptoms, and collecting such data is costly. Understanding how many sensors and how much labeled data are required is key to successfully deploying these models outside of the clinic. Here we measured movement data using 6 flexible wearable sensors in 20 individuals with PD over the course of multiple clinical assessments. The patients were monitored on one day and assessed again two weeks later. Participants performed a range of daily activities, such as walking or typing, while a clinician rated the severity of their symptoms (bradykinesia and tremor). We then trained random forest classifiers to detect whether a segment of movement showed signs of bradykinesia or tremor based on data from tasks performed by a single individual (personal models) or multiple individuals (population models). Our results show that a single wearable sensor on the back of the hand is sufficient for symptom detection, and that using personal data improves accuracy over population models. Training on repeated assessments on one day does not improve detection on subsequent days. Our results suggest that PD patients could significantly benefit from continuous detection of motor symptoms in small, personalized datasets collected longitudinally.
+Machine learning algorithms that use data streams captured from soft wearable sensors have the potential to automatically detect PD symptoms and inform clinicians about the progression of disease. However, these algorithms must be trained with annotated data from clinical experts who can recognize symptoms, and collecting such data is costly. Understanding how many sensors and how much labeled data are required is key to successfully deploying these models outside of the clinic. Here we recorded movement data using 6 flexible wearable sensors in 20 individuals with PD over the course of multiple clinical assessments conducted on one day and repeated two weeks later. Participants performed 13 common tasks, such as walking or typing, while a clinician rated the severity of symptoms (bradykinesia and tremor). We then trained convolutional neural networks and statistical ensembles to detect whether a segment of movement showed signs of bradykinesia or tremor based on data from tasks performed by other individuals. Our results show that a single wearable sensor on the back of the hand is sufficient for detecting bradykinesia and tremor in the upper extremities, while using sensors on both sides does not improve performance. Increasing the amount of training data by adding other individuals can lead to improved performance, but repeating assessments with the same individuals - even at different medication states - does not substantially improve detection across days. Our results suggest that PD symptoms can be detected during a variety of activities and are best modeled by a dataset incorporating many individuals.
 
 # Repo Contents
 
@@ -125,10 +123,3 @@ Currently, a limited "toy" dataset containing simulated data using identical sen
 
 If you encounter any issues with playing around with the "toy" dataset, please raise an [Issue](https://github.com/Luke3D/CIS-PD_npg/issues). It is probable that many of these issues will resolve themselves once the complete dataset used in the study is available, with permission from the Michael J. Fox Foundation as they follow their scheduled CIS-PD data release timeline.
 
-# Results
-Our results show that a single wearable sensor on the back of the hand is sufficient for symptom detection, and that using personal data improves accuracy over population models. Training on repeated assessments on one day does not improve detection on subsequent days. Our results suggest that PD patients could significantly benefit from continuous detection of motor symptoms in small, personalized datasets collected longitudinally.
-
-To do: add more results
-
-# Citation
-To do
